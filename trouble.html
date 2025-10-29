@@ -3,11 +3,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elephants of the World</title>
-<link href="" rel="stylesheet" type="text/css"/>
+<link href="more.css" rel="stylesheet" type="text/css"/>
+  <!-- The link href tag was missing the connection to the css document. This caused the whole website to have no styling effects because in order for a website to have styling, there has to be a link href tag that lists the css page.  -->
 </head>
 <body>
 <div id="navbar">
-<h2>🐘 Elephants<h2>
+<h2>🐘 Elephants</h2>
+  <!-- The h2 tag was missing a / which indicates the ending of the h2 heading. This was causing a bug because the h2 heading didn’t know where to end which made the website show a different h2 tag.   -->
 <h2> Name</h2>
 </div>
 
@@ -15,8 +17,11 @@
 <h1>Elephants of the World</h1>
 <p>The gentle giants that shape our ecosystems.</p>
 
-<div class=section>
+<div class="section">
+  <!-- The div class tag was missing 2 quotation marks from the start and ending of the section class. This caused a bug where the css code didn’t know where to add the styling as there were no div class named section.  -->
 <h2>About Elephants</h2>
+  <p>
+    <!-- There is no opening ‘p’ tag to the following paragraph below. This caused a bug because the styling css page doesn’t know which element to affect.  -->
 Elephants are the largest land mammals on Earth. They are highly intelligent and form
 strong
 family bonds led by a matriarch. They use their trunks for eating, drinking, and
@@ -41,12 +46,15 @@ There are three main species of elephants — each adapted to its own habitat:
 <li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
 <li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
 </li>
+</ul>
+  <!-- There was no ending <ul> tag which caused a bug where the list didn’t know where to end. This made it so everything underneath was included in the <ul> tag. -->
 <div class="info-box">
-<p><strong>Fun fact: Elephant ears help regulate body temperature!</p>
+<p><strong>Fun fact:</strong> Elephant ears help regulate body temperature!</p>
+  <!-- There wasn’t an ending to the strong tag which caused the rest of the sentence to be bolded instead of regular text.   -->
 </div>
 </div>
 
-<div class="section" >
+<div class="section">
 <h2>Fun Facts</h2>
 <div class="facts-container">
 <div class="fact-card">🐘 Elephants can recognize themselves in mirrors.
@@ -55,8 +63,10 @@ There are three main species of elephants — each adapted to its own habitat:
 </div>
 </div>
 
-<div id="footer"
+<div id="footer">
+  <!-- There is no closing bracket to the div id. This caused a bug because the website didn’t know where the container ended which affected other elements of the website.  -->
 <p>© 2025 Elephants of the World</p>
 </div>
-
+</body>
+  <!-- There is no ending body tag to the html section of the website. This caused a bug because the website did not know where the body ended which also made the css code not apply to the body as it also did not know where it ended.  -->
 </html>
