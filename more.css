@@ -106,6 +106,7 @@ color: white;
 text-align: center;
 padding: 20px;
 position: relative;
-z-index 10;
+z-index: 10;
+  /* The css declaration was missing a colon. This caused a bug where the website wouldn't render in the proper position of the footer class */
 }
 /* : The css code was missing an ending bracket. This caused a minor bug because the browser did not know where the container ended. */
