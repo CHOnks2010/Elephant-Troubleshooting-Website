@@ -7,6 +7,8 @@ color: #333;
 
 #navbar {
 position: fixed;
+top: 0%;
+  /* There was a missing css declaration in the code itself.  This caused 2 bugs in the code with the first being that the navbar left a huge gap when the website reached the top of the screen. The second problem was that the div class “sticky-title” wasn’t sticky and didn’t slide to the bottom of the page.  */
 width: 100%;
 background-color: #3a7ca5;
 color: white;
@@ -38,7 +40,8 @@ font-size: 1.2rem;
 margin: 60px auto;
 width: 80%;
 max-width: 900px;
-color: white;
+color: black;
+  /* The css declaration was the opposite shade then it should be. This caused a bug in visibility as the text itself wasn’t visible. By making it black, the text could now be shown.  */
 padding: 30px;
 border-radius: 12px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -46,7 +49,8 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 position: relative;
 }
 .parent-box {
-position: relative
+position: relative;
+  /* The css declaration was missing a semicolon which caused a bug in the website as the browser didn’t know where one declaration ended and the other began.  */
 background-color: #d8efff;
 padding: 30px;
 margin-top: 25px;
@@ -57,9 +61,11 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10png;
+padding: 10px;
+  /* There was a spelling error in the css declaration. This caused a bug in the website as the browser couldn’t render in the padding because it wasn’t in proper pixels but rather png which is a type of file.   */
 border-radius: 6px;
-with: 45%;
+width: 45%;
+  /* The css declaration had a spelling error which caused a bug in the website where the width was an improper size than it should be.  */
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
@@ -67,22 +73,24 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 position: sticky;
 top: 70px;
 background-color: #3a7ca5;
-colour: white;
+color: white;
+  /* The css declaration was spelled incorrectly. Specifically the Canadian version. This caused a bug in the code because the browser couldn’t tell if the color was supposed to be shown. */
 padding: 10px;
 border-radius: 8px;
 z-index: 5;
 }
 
 .info-box {
-background-color: f0f9ff;
+background-color: #f0f9ff;
+  /* The css declaration was missing a hashtag symbol (#). This caused a bug where the background color wasn’t being printed onto the website as the hex color missed the hashtag which is what makes the hex color a part of the hex system.  */
 border-left: 6px solid #3a7ca5;
 padding: 15px;
 margin-top: 20px;
 border-radius: 8px;
 }
 
-#fact-card {
-
+.fact-card {
+/* The css declaration had an incorrect selector. This caused a bug in the website because the # selector selected a unique class and did not apply to all of the other classes under the category.  */
 background-color: #e3f8e0;
 border: 2px solid #6fc276;
 padding: 15px;
@@ -99,4 +107,5 @@ text-align: center;
 padding: 20px;
 position: relative;
 z-index 10;
-
+}
+/* : The css code was missing an ending bracket. This caused a minor bug because the browser did not know where the container ended. */
