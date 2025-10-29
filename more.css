@@ -1,122 +1,111 @@
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f5f9fc;
-  color: #333;
+font-family: "Segoe UI", sans-serif;
+background-color: #f5f9fc;
+color: #333;
+
 }
 
-/*   Fixed top navigation bar   */
 #navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #3a7ca5;
-  color: white;
-  padding: 10px 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
+position: fixed;
+top: 0%;
+  /* There was a missing css declaration in the code itself.  This caused 2 bugs in the code with the first being that the navbar left a huge gap when the website reached the top of the screen. The second problem was that the div class “sticky-title” wasn’t sticky and didn’t slide to the bottom of the page.  */
+width: 100%;
+background-color: #3a7ca5;
+color: white;
+padding: 10px 0;
+z-index: 100;
+display: flex;
+justify-content: space-around;
+align-items: center;
 }
 
-/* Hero section with large title and intro text */
 #hero {
-  text-align: center;
-  background: #c8e8f3;
-  color: #2b6777;
-  padding: 140px 20px 80px;
-  margin-top: 60px; /* Offset for fixed navbar */
-  position: relative;
-  z-index: 1;
+text-align: center;
+background: #c8e8f3;
+color: #2b6777;
+padding: 140px 20px 80px;
+margin-top: 60px;
+position: relative;
+z-index: 1;
 }
-
 #hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+font-size: 3rem;
+margin-bottom: 10px;
 }
-
 #hero p {
-  font-size: 1.2rem;
+font-size: 1.2rem;
 }
 
-/* General section styling */
 .section {
-  margin: 60px auto;
-  width: 80%;
-  max-width: 900px;
- 
-  color: black;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  position: relative;
-}
+margin: 60px auto;
+width: 80%;
+max-width: 900px;
+color: black;
+  /* The css declaration was the opposite shade then it should be. This caused a bug in visibility as the text itself wasn’t visible. By making it black, the text could now be shown.  */
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
-/* Parent box with relative positioning */
+position: relative;
+}
 .parent-box {
-  position: relative;
-  background-color: #d8efff;
-  padding: 30px;
-  margin-top: 25px;
-  border-radius: 8px;
+position: relative;
+  /* The css declaration was missing a semicolon which caused a bug in the website as the browser didn’t know where one declaration ended and the other began.  */
+background-color: #d8efff;
+padding: 30px;
+margin-top: 25px;
+border-radius: 8px;
 }
-
-/* Child box positioned absolutely inside parent */
 .child-box {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background-color: #9cd0ff;
-  padding: 10px;
-  border-radius: 6px;
-  width: 45%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+position: absolute;
+top: 10px;
+right: 20px;
+background-color: #9cd0ff;
+padding: 10px;
+  /* There was a spelling error in the css declaration. This caused a bug in the website as the browser couldn’t render in the padding because it wasn’t in proper pixels but rather png which is a type of file.   */
+border-radius: 6px;
+width: 45%;
+  /* The css declaration had a spelling error which caused a bug in the website where the width was an improper size than it should be.  */
+box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Sticky title that stays visible while scrolling */
 .sticky-title {
-  position: sticky;
-  top: 70px;
-  background-color: #3a7ca5;
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 5;
+position: sticky;
+top: 70px;
+background-color: #3a7ca5;
+color: white;
+  /* The css declaration was spelled incorrectly. Specifically the Canadian version. This caused a bug in the code because the browser couldn’t tell if the color was supposed to be shown. */
+padding: 10px;
+border-radius: 8px;
+z-index: 5;
 }
 
-/* Info box with left border highlight */
 .info-box {
-  background-color: #f0f9ff;
-  border-left: 6px solid #3a7ca5;
-  padding: 15px;
-  margin-top: 20px;
-  border-radius: 8px;
+background-color: #f0f9ff;
+  /* The css declaration was missing a hashtag symbol (#). This caused a bug where the background color wasn’t being printed onto the website as the hex color missed the hashtag which is what makes the hex color a part of the hex system.  */
+border-left: 6px solid #3a7ca5;
+padding: 15px;
+margin-top: 20px;
+border-radius: 8px;
 }
 
-/* Individual fun fact cards */
 .fact-card {
-  background-color: #e3f8e0;
-  border: 2px solid #6fc276;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  position: relative;
-  margin-top: 10px;
+/* The css declaration had an incorrect selector. This caused a bug in the website because the # selector selected a unique class and did not apply to all of the other classes under the category.  */
+background-color: #e3f8e0;
+border: 2px solid #6fc276;
+padding: 15px;
+border-radius: 8px;
+text-align: center;
+position: relative;
+margin-top: 10px;
 }
 
-/* Container for stacking fact cards vertically */
-.facts-container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Footer styling */
 #footer {
-  background-color: #3a7ca5;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  z-index: 10;
-  
+background-color: #3a7ca5;
+color: white;
+text-align: center;
+padding: 20px;
+position: relative;
+z-index 10;
 }
+/* : The css code was missing an ending bracket. This caused a minor bug because the browser did not know where the container ended. */
